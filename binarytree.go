@@ -3,8 +3,7 @@ package main
 import (
 	"fmt"
 	"strings"
-
-	"golang.org/x/tour/tree"
+        "golang.org/x/tour/tree"
 )
 
 type Tree struct {
