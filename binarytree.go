@@ -50,7 +50,7 @@ func main() {
 	go func() {
 		k := len(ch)
 		for i := 0; i < k; i++ {
-			fmt.Print(" ", <-ch)
+			fmt.Print(" ", <-ch) //Print all values in channel ch
 		}
 	}()
 	var t1, t2 *tree.Tree
@@ -60,7 +60,7 @@ func main() {
 	}
 	var bl bool
 	bl = Same(t1, t2)
-	fmt.Println(bl)
+	fmt.Println(bl) // return true
 	var c string
 	fmt.Scanln(&c)
 }
